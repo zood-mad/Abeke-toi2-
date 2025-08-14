@@ -10,69 +10,95 @@
         body {
             margin: 0;
             font-family: 'Marck Script', cursive;
-            background: linear-gradient(to bottom, #e6f2ff, #ffffff);
-            color: #003366;
+            background: #f0f8ff;
+            color: #002b5c;
             text-align: center;
         }
 
         header {
-            padding: 40px 20px;
-            background: rgba(0, 102, 204, 0.85);
-            color: white;
+            position: relative;
+            height: 100vh;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Kazakh_ornament_blue.png') center/cover, #e6f2ff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .collage {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        .collage img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 54px;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+            margin-top: 20px;
         }
 
-        h2 {
-            font-size: 28px;
-            font-weight: normal;
+        section {
+            padding: 80px 20px;
+            background: white url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Kazakh_national_pattern.svg/1280px-Kazakh_national_pattern.svg.png') repeat;
+            background-size: 200px;
         }
 
-        .content {
-            padding: 30px;
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 700px;
+            margin: auto;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             font-size: 22px;
             line-height: 1.6;
         }
 
-        .card {
-            background: rgba(255, 255, 255, 0.9);
-            max-width: 600px;
-            margin: 20px auto;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
         footer {
-            margin-top: 40px;
-            padding: 15px;
-            font-size: 18px;
-            background: rgba(0, 102, 204, 0.85);
+            padding: 30px;
+            background: #002b5c;
             color: white;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
+        <div class="collage">
+            <img src="foto1.jpg" alt="Абеке фото 1">
+            <img src="foto2.jpg" alt="Абеке фото 2">
+        </div>
         <h1>Абеке Тілашар Тойы</h1>
-        <h2>Сізді қуанышымызға шақырамыз!</h2>
     </header>
 
-    <div class="content">
+    <section>
         <div class="card">
-            <p><strong>📅 Күні:</strong> 15 қазан 2025</p>
-            <p><strong>⏰ Уақыты:</strong> 16:00</p>
-            <p><strong>🏛 Өтетін орны:</strong> Toi Grand мейрамханасы<br>Таттімбет көшесі 18а</p>
-            <p><strong>👨‍👩‍👦 Той иелері:</strong> Әжесі Батима,<br>Ата-Анасы Адай мен Лаура</p>
+            <p><strong>Күні:</strong> 15 қазан 2025</p>
+            <p><strong>Уақыты:</strong> 16:00</p>
+            <p><strong>Өтетін орны:</strong> Toi Grand мейрамханасы, Таттімбет көшесі 18а</p>
+            <p><strong>Той иелері:</strong> Әжесі Батима, Ата-Анасы Адай мен Лаура</p>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <p>Балаға арнап өткізілетін Тілашар — ата-бабамыздан келе жатқан дәстүр. Бұл күні бүлдіршін алғаш рет мектепке барып, білім жолына қадам басады. Сіздерді осы қуанышымызға ортақтасуға шақырамыз.</p>
+        </div>
+    </section>
 
     <footer>
-        Қуанышта жолығайық! 💙
+        Қуанышта жолығайық
     </footer>
 
 </body>
