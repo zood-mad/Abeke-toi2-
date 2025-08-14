@@ -1,134 +1,104 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Абеке Тілашар Тойы</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
-
-        body {
-            margin: 0;
-            font-family: 'Marck Script', cursive;
-            background: #f0f8ff;
-            color: #002b5c;
-            text-align: center;
-            scroll-behavior: smooth;
-        }
-
-        section {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-        }
-
-        /* Первый экран */
-        #hero {
-            background: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Kazakh_ornament_blue.png') center/cover no-repeat;
-            color: white;
-        }
-
-        .collage {
-            display: flex;
-            gap: 40px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .collage img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 8px solid white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        }
-
-        h1 {
-            font-size: 54px;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-            margin-top: 20px;
-        }
-
-        /* Второй экран */
-        #tradition {
-            background: #e6f2ff url('https://upload.wikimedia.org/wikipedia/commons/5/56/Kazakh_ornament_blue.png') center/cover;
-            color: #002b5c;
-        }
-
-        .tradition-text {
-            background: rgba(255, 255, 255, 0.92);
-            padding: 40px;
-            border-radius: 15px;
-            max-width: 700px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            font-size: 22px;
-            line-height: 1.6;
-        }
-
-        /* Третий экран */
-        #info {
-            background: white url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Kazakh_national_pattern.svg/1280px-Kazakh_national_pattern.svg.png') repeat;
-            background-size: 200px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            max-width: 700px;
-            margin: auto;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            font-size: 22px;
-            line-height: 1.6;
-        }
-
-        footer {
-            padding: 20px;
-            background: #002b5c;
-            color: white;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абеке Тілашар Тойы</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      color: #003366;
+      scroll-behavior: smooth;
+      position: relative;
+    }
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      position: relative;
+    }
+    .collage {
+      display: flex;
+      gap: 20px;
+      z-index: 1;
+    }
+    .collage img {
+      width: 45%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    /* Орнаменты */
+    .decor-corner {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      opacity: 0.6;
+    }
+    .decor-top-left {
+      top: 10px;
+      left: 10px;
+    }
+    .decor-top-right {
+      top: 10px;
+      right: 10px;
+      transform: scaleX(-1);
+    }
+    .divider {
+      width: 80%;
+      height: 50px;
+      background: url('Кодилишь_сюда_свой_орнамент.png') center/contain no-repeat;
+      margin: 20px auto;
+    }
+    footer {
+      text-align: center;
+      padding-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Первый экран -->
-    <section id="hero">
-        <div class="collage">
-            <img src="foto1.jpg" alt="Абеке фото 1">
-            <img src="foto2.jpg" alt="Абеке фото 2">
-        </div>
-        <h1>Абеке Тілашар Тойы</h1>
-    </section>
+  <!-- Первый экран -->
+  <section class="page1" style="background: linear-gradient(180deg, #e0f0ff, #cce5ff);">
+    <img src="DECO1.png" class="decor-corner decor-top-left" alt="">
+    <img src="DECO1.png" class="decor-corner decor-top-right" alt="">
+    <h1>Абеке Тілашар Тойы</h1>
+    <p>Ардақты ағайын, әзіз жандар!</p>
+    <div class="collage">
+      <img src="foto1.jpg" alt="Фото 1">
+      <img src="foto2.jpg" alt="Фото 2">
+    </div>
+  </section>
 
-    <!-- Второй экран -->
-    <section id="tradition">
-        <div class="tradition-text">
-            <p>Балаға арнап өткізілетін Тілашар — ата-бабамыздан келе жатқан дәстүр. 
-            Бұл күні бүлдіршін алғаш рет мектепке барып, білім жолына қадам басады. 
-            Дастархан жайылып, туыстар мен жақындар шақырылады, балаға бата беріледі. 
-            Сіздерді осы қуанышымызға ортақтасуға шақырамыз.</p>
-        </div>
-    </section>
+  <!-- Между экранов (декоративный разделитель) -->
+  <div class="divider"></div>
 
-    <!-- Третий экран -->
-    <section id="info">
-        <div class="card">
-            <p><strong>Күні:</strong> 15 қазан 2025</p>
-            <p><strong>Уақыты:</strong> 16:00</p>
-            <p><strong>Өтетін орны:</strong> Toi Grand мейрамханасы, Таттімбет көшесі 18а</p>
-            <p><strong>Той иелері:</strong> Әжесі Батима, Ата-Анасы Адай мен Лаура</p>
-        </div>
-    </section>
+  <!-- Второй экран -->
+  <section class="page2" style="background: linear-gradient(180deg, #ffffff, #d9ebff);">
+    <h1>Құрметті ағайын-туыс, дос-жаран!</h1>
+    <p>Сіздерді отбасымыздың қуанышы —  сүйікті ұлымыз <b>Абекенің тілашар тойына</b> шақырамыз!</p>
+    <p>Бұл — баламыздың алғаш рет әліппе ашып,  білім жолына қадам басқан сәтін бірге атап өтетін қуанышты күн.</p>
+    <p><b>Күні:</b> 15 қазан 2025 ж.</p>
+    <p><b>Басталу уақыты:</b> 16:00</p>
+    <p><b>Мекен-жай:</b> Toi Grand мейрамханасы, Таттімбет көшесі 18а</p>
+    <p><b>Той иелері:</b> Әжесі Батима, Ата-Анасы Адай-Лаура</p>
+  </section>
 
+  <div class="divider"></div>
+
+  <!-- Третий экран -->
+  <section class="page3" style="background: linear-gradient(180deg, #cce5ff, #99ccff);">
+    <h1>Тойға келіңіздер!</h1>
+    <p>Ақ дастарқанымыздан дәм татып,  қуанышымызға ортақ болыңыздар!</p>
     <footer>
-        Қуанышта жолығайық
+      <img src="DECO2.png" alt="" width="120" style="opacity:0.6;">
+      <p>Ізгі тілекпен, біздің жанұямыз</p>
     </footer>
+  </section>
 
 </body>
 </html>
