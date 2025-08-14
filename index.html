@@ -1,104 +1,95 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Абеке Тілашар Тойы</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f8ff;
-      color: #003366;
-      scroll-behavior: smooth;
-      position: relative;
-    }
-    section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px;
-      position: relative;
-    }
-    .collage {
-      display: flex;
-      gap: 20px;
-      z-index: 1;
-    }
-    .collage img {
-      width: 45%;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    }
-    /* Орнаменты */
-    .decor-corner {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      opacity: 0.6;
-    }
-    .decor-top-left {
-      top: 10px;
-      left: 10px;
-    }
-    .decor-top-right {
-      top: 10px;
-      right: 10px;
-      transform: scaleX(-1);
-    }
-    .divider {
-      width: 80%;
-      height: 50px;
-      background: url('Кодилишь_сюда_свой_орнамент.png') center/contain no-repeat;
-      margin: 20px auto;
-    }
-    footer {
-      text-align: center;
-      padding-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абеке тілашар тойы</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #003366;
+        }
+        .page {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .page1 {
+            background-color: #e6f0ff;
+        }
+        .page2 {
+            background-color: #ffffff;
+        }
+        .page3 {
+            background-color: #d9eaff;
+        }
+        .photos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .photos img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.3em;
+            max-width: 700px;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Первый экран -->
-  <section class="page1" style="background: linear-gradient(180deg, #e0f0ff, #cce5ff);">
-    <img src="DECO1.png" class="decor-corner decor-top-left" alt="">
-    <img src="DECO1.png" class="decor-corner decor-top-right" alt="">
-    <h1>Абеке Тілашар Тойы</h1>
-    <p>Ардақты ағайын, әзіз жандар!</p>
-    <div class="collage">
-      <img src="foto1.jpg" alt="Фото 1">
-      <img src="foto2.jpg" alt="Фото 2">
+    <!-- Первая страница -->
+    <div class="page page1">
+        <h1>Абеке тілашар тойы</h1>
+        <div class="photos">
+            <img src="images/brat1.jpg" alt="Фото братика">
+            <img src="images/brat2.jpg" alt="Фото братика 2">
+        </div>
     </div>
-  </section>
 
-  <!-- Между экранов (декоративный разделитель) -->
-  <div class="divider"></div>
+    <!-- Вторая страница -->
+    <div class="page page2">
+        <h2>Құрметті қонақтар!</h2>
+        <p>
+            Сіздерді сүйікті бауырымыздың мектепке қадам басу құрметіне арналған тілашар тойымызға шақырамыз!  
+            Бұл ерекше күн — жаңа білім мен достыққа бастар жолдың алғашқы қадамы.
+        </p>
+        <p>
+            📅 15 қазан 2025  
+            🕓 Сағат 16:00  
+            📍 Toi Grand мейрамханасы, Таттімбет көшесі 18а  
+        </p>
+    </div>
 
-  <!-- Второй экран -->
-  <section class="page2" style="background: linear-gradient(180deg, #ffffff, #d9ebff);">
-    <h1>Құрметті ағайын-туыс, дос-жаран!</h1>
-    <p>Сіздерді отбасымыздың қуанышы —  сүйікті ұлымыз <b>Абекенің тілашар тойына</b> шақырамыз!</p>
-    <p>Бұл — баламыздың алғаш рет әліппе ашып,  білім жолына қадам басқан сәтін бірге атап өтетін қуанышты күн.</p>
-    <p><b>Күні:</b> 15 қазан 2025 ж.</p>
-    <p><b>Басталу уақыты:</b> 16:00</p>
-    <p><b>Мекен-жай:</b> Toi Grand мейрамханасы, Таттімбет көшесі 18а</p>
-    <p><b>Той иелері:</b> Әжесі Батима, Ата-Анасы Адай-Лаура</p>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- Третий экран -->
-  <section class="page3" style="background: linear-gradient(180deg, #cce5ff, #99ccff);">
-    <h1>Тойға келіңіздер!</h1>
-    <p>Ақ дастарқанымыздан дәм татып,  қуанышымызға ортақ болыңыздар!</p>
-    <footer>
-      <img src="DECO2.png" alt="" width="120" style="opacity:0.6;">
-      <p>Ізгі тілекпен, біздің жанұямыз</p>
-    </footer>
-  </section>
+    <!-- Третья страница -->
+    <div class="page page3">
+        <h2>Той иелері</h2>
+        <p>
+            Әжесі Батима  
+            Ата-Анасы: Адай мен Лаура
+        </p>
+        <h2>Күтеміз!</h2>
+    </div>
 
 </body>
 </html>
